@@ -9,11 +9,11 @@ namespace
 DSA.Extensions.Conversations.DataStructure
 {
 	[System.Serializable]
-	public class Stage : NestedBaseData<DialougeBranch>, ISettable<string, int, bool>, IProvider<StoryIndex>, IConditional, IDefault<ConversationDefualts, int>
+	public class Stage : NestedBaseData<DialougeBranch>, ISettable<string, int, bool>, IProvider<int[]>, IConditional, IDefault<ConversationDefualts, int>
 	{
 		[SerializeField] private string name;
 		public override string Text { get { return name; } }
-		[SerializeField] private StoryIndex storyIndex;
+		[SerializeField] private int[] identifier;
 		[HideInInspector] [SerializeField] private int id;
 		public override int ID { get { return id; } }
 		[HideInInspector] [SerializeField] private bool isUsed;
@@ -65,9 +65,9 @@ DSA.Extensions.Conversations.DataStructure
 			return isUsed;
 		}
 
-		public StoryIndex GetItem()
+		public int[] GetItem()
 		{
-			return storyIndex;
+			return identifier;
 		}
 
 		public void SetDefault(ConversationDefualts sentItem1, int sentItem2)

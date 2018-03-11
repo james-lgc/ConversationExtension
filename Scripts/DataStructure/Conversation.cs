@@ -8,7 +8,7 @@ using DSA.Extensions.Base;
 namespace DSA.Extensions.Conversations.DataStructure
 {
 	[System.Serializable]
-	public class Conversation : NestedBaseData<Stage>, ISettable<string, int, string>, IPrintable, ICatalogued<StoryIndex, Stage>, IDefault<ConversationDefualts, int>, IProvider<Stage>
+	public class Conversation : NestedBaseData<Stage>, ISettable<string, int, string>, IPrintable, ICatalogued<int[], Stage>, IDefault<ConversationDefualts, int>, IProvider<Stage>
 	{
 		[SerializeField] private string name;
 		public override string Text { get { return name; } }
@@ -24,9 +24,9 @@ namespace DSA.Extensions.Conversations.DataStructure
 
 		[SerializeField] private Stage[] stages;
 
-		public Dictionary<StoryIndex, Stage> GetDictionary()
+		public Dictionary<int[], Stage> GetDictionary()
 		{
-			Dictionary<StoryIndex, Stage> stageDictionary = new Dictionary<StoryIndex, Stage>();
+			Dictionary<int[], Stage> stageDictionary = new Dictionary<int[], Stage>();
 			for (int i = 0; i < stages.Length; i++)
 			{
 				stageDictionary.Add(stages[i].GetItem(), stages[i]);

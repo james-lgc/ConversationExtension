@@ -17,7 +17,7 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 		private UnityEditorInternal.ReorderableList firstBranchesList;
 		private UnityEditorInternal.ReorderableList secondBranchesList;
 		private SerializedProperty topic;
-		private SerializedProperty storyIndex;
+		private SerializedProperty identifier;
 		private SerializedProperty firstBranches;
 		private SerializedProperty secondBranches;
 
@@ -28,10 +28,10 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			base.SetProperties(sentProperty);
 			//set child properties
 			topic = sentProperty.FindPropertyRelative("name");
-			storyIndex = sentProperty.FindPropertyRelative("storyIndex");
 			firstBranches = sentProperty.FindPropertyRelative("firstBranches");
 			secondBranches = sentProperty.FindPropertyRelative("secondBranches");
 			uniqueID = sentProperty.FindPropertyRelative("uniqueID");
+			identifier = sentProperty.FindPropertyRelative("identifier");
 			//create action for edit button in list
 			//action opens property in conversation window
 			System.Action<SerializedProperty> editAction = DSA.Extensions.Conversations.DataStructure.Editor.ConversationEditorWindow.Init;
@@ -62,8 +62,9 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			newPosition = DrawUniqueID(newPosition);
 			//draw name field
 			newPosition = DrawTextField(newPosition, topic, "Topic");
-			//draw story index
-			newPosition = DrawPropertyField(newPosition, storyIndex, usePadding: false);
+			//draw identifier
+			newPosition = EditorTool.DrawArray(newPosition, identifier, "Identifier");
+			//newPosition = new Rect(newPosition.x, newPosition.y + lineHeight, newPosition.width, 50F);
 			//draw branches
 			newPosition = DrawReorderableList(newPosition, firstBranchesList, "Branches");
 			newPosition = DrawReorderableList(newPosition, secondBranchesList, null);
@@ -79,14 +80,13 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			totalHeight = totalHeight + GetAddedHeight(lineHeight);
 			//add topic field
 			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-			//add story index label
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-			//add story index fields
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
-
+			//add identifier
+			float identifierHeight = GetAddedHeight(lineHeight);
+			for (int i = 0; i < identifier.arraySize; i++)
+			{
+				identifierHeight += GetAddedHeight(GetHeight(identifier.GetArrayElementAtIndex(i)));
+			}
+			totalHeight += identifierHeight;
 			//add branches label
 			totalHeight = totalHeight + GetAddedHeight(lineHeight);
 

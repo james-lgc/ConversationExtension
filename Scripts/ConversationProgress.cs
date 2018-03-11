@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public struct ConversationProgress
 {
-	[SerializeField] private Dictionary<string, List<StoryIndex>> spokenToDictionary;
-	public Dictionary<string, List<StoryIndex>> SpokenToDictionary { get { return spokenToDictionary; } }
+	[SerializeField] private Dictionary<string, List<int[]>> spokenToDictionary;
+	public Dictionary<string, List<int[]>> SpokenToDictionary { get { return spokenToDictionary; } }
 
-	public ConversationProgress(Dictionary<string, List<StoryIndex>> sentDict)
+	public ConversationProgress(Dictionary<string, List<int[]>> sentDict)
 	{
 		spokenToDictionary = sentDict;
 	}

@@ -8,7 +8,7 @@ namespace DSA.Extensions.Conversations
 	public class SpokenToHandler
 	{
 
-		public static Conversation GetSpokenTo(Conversation sentConversation, Conversation originalConversation, Dictionary<string, List<StoryIndex>> spokenToDictionary)
+		public static Conversation GetSpokenTo(Conversation sentConversation, Conversation originalConversation, Dictionary<string, List<int[]>> spokenToDictionary)
 		{
 			Conversation filteredConversation = sentConversation;
 			if (sentConversation.GetArray().Length == 1)
@@ -25,12 +25,12 @@ namespace DSA.Extensions.Conversations
 		}
 
 		//Returns the last stage discussed from the conversation.
-		private static Stage GetLastStage(Conversation conv, Dictionary<string, List<StoryIndex>> dict)
+		private static Stage GetLastStage(Conversation conv, Dictionary<string, List<int[]>> dict)
 		{
-			List<StoryIndex> tempList;
+			List<int[]> tempList;
 			if (dict == null)
 			{
-				dict = new Dictionary<string, List<StoryIndex>>();
+				dict = new Dictionary<string, List<int[]>>();
 				return null;
 			}
 			if (dict.TryGetValue(conv.Text, out tempList))
@@ -48,12 +48,12 @@ namespace DSA.Extensions.Conversations
 		}
 
 		//Checks if any stages in use have been used in conversation already.  Calls "Use" on stage if true.
-		private static void UseStages(Conversation conv, Dictionary<string, List<StoryIndex>> dict)
+		private static void UseStages(Conversation conv, Dictionary<string, List<int[]>> dict)
 		{
-			List<StoryIndex> tempList;
+			List<int[]> tempList;
 			if (dict == null)
 			{
-				dict = new Dictionary<string, List<StoryIndex>>();
+				dict = new Dictionary<string, List<int[]>>();
 				return;
 			}
 			if (dict.TryGetValue(conv.Text, out tempList))
@@ -65,17 +65,17 @@ namespace DSA.Extensions.Conversations
 			}
 		}
 
-		public static void SetSpokenToDictionary(Conversation sentConversation, Dictionary<string, List<StoryIndex>> spokenToDictionary)
+		public static void SetSpokenToDictionary(Conversation sentConversation, Dictionary<string, List<int[]>> spokenToDictionary)
 		{
 			for (int i = 0; i < sentConversation.GetArray().Length; i++)
 			{
 				Stage stage = (Stage)sentConversation.GetArray()[i];
 				if (stage.GetIsConditionMet() == true)
 				{
-					List<StoryIndex> tempList;
+					List<int[]> tempList;
 					if (!spokenToDictionary.TryGetValue(sentConversation.Text, out tempList))
 					{
-						tempList = new List<StoryIndex>();
+						tempList = new List<int[]>();
 						spokenToDictionary.Add(sentConversation.Text, tempList);
 					}
 					tempList.Add(stage.GetItem());

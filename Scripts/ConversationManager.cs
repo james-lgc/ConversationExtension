@@ -18,14 +18,14 @@ namespace DSA.Extensions.Conversations
 
 		private ConversationList hardConversationList;
 		private Conversation conversation;
-		[SerializeField] [HideInInspector] private Dictionary<string, List<StoryIndex>> spokenToDictionary;
-		public Dictionary<string, List<StoryIndex>> SpokenToDictionary { get { if (spokenToDictionary == null) { spokenToDictionary = new Dictionary<string, List<StoryIndex>>(); } return spokenToDictionary; } }
+		[SerializeField] [HideInInspector] private Dictionary<string, List<int[]>> spokenToDictionary;
+		public Dictionary<string, List<int[]>> SpokenToDictionary { get { if (spokenToDictionary == null) { spokenToDictionary = new Dictionary<string, List<int[]>>(); } return spokenToDictionary; } }
 
 		public override void Initialize()
 		{
 			base.Initialize();
 			conversationDataHolder.GetDataFunc = GetConversationByName;
-			if (spokenToDictionary == null) spokenToDictionary = new Dictionary<string, List<StoryIndex>>();
+			if (spokenToDictionary == null) spokenToDictionary = new Dictionary<string, List<int[]>>();
 		}
 
 		public override void LoadAtGameStart()
