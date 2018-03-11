@@ -1,0 +1,10 @@
+{
+    "name": "DSA.Extensions.Conversations.Editor",
+    "references": [
+        "DSA.Extensions.Base",
+        "DSA.Extensions.Base.Editor",
+        "DSA.Extensions.Conversations"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

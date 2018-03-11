@@ -1,0 +1,8 @@
+{
+    "name": "DSA.Extensions.Conversations",
+    "references": [
+        "DSA.Extensions.Base"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
