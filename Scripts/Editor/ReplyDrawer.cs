@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using DSA.Extensions.Base.Editor;
 
 namespace DSA.Extensions.Conversations.Editor
@@ -11,10 +11,8 @@ namespace DSA.Extensions.Conversations.Editor
 	[CustomPropertyDrawer(typeof(Reply))]
 	//Overrides how Reply class is displayed in Unity Editor
 	//Adds a reorderable list with edit buttons to show nested data
-	//Inherits from BasePropertyDrawer to access custom defaults
-	public class ReplyDrawer : DataItemDrawer
+	public class ReplyDrawer : BaseConversationDrawer
 	{
-		private SerializedProperty name;
 		private SerializedProperty tag;
 
 		private SerializedProperty tagType;
@@ -40,7 +38,7 @@ namespace DSA.Extensions.Conversations.Editor
 			//draw unique id
 			newPosition = DrawUniqueID(newPosition);
 			//Draw name
-			newPosition = DrawTextField(newPosition, name, "Text");
+			newPosition = EditorTool.DrawTextField(newPosition, name, "Text");
 			//Draw tag
 			newPosition = DrawTag(newPosition);
 		}
@@ -48,19 +46,19 @@ namespace DSA.Extensions.Conversations.Editor
 		protected Rect DrawTag(Rect position)
 		{
 			//Draw tagType
-			Rect newPosition = DrawPropertyField(position, tagType);
+			Rect newPosition = EditorTool.DrawPropertyField(position, tagType);
 			//add indent
-			newPosition = GetIndentedPosition(newPosition);
+			newPosition = EditorTool.GetIndentedPosition(newPosition);
 			//Draw necissary fields based on tag type
 			switch (tagType.intValue)
 			{
 				case 2:
 					//Draw id
-					newPosition = DrawIntField(newPosition, id, "ID");
+					newPosition = EditorTool.DrawIntField(newPosition, id, "ID");
 					break;
 				case 3:
 					//Draw id
-					newPosition = DrawIntField(newPosition, id, "ID");
+					newPosition = EditorTool.DrawIntField(newPosition, id, "ID");
 					break;
 			}
 			return newPosition;
@@ -72,17 +70,17 @@ namespace DSA.Extensions.Conversations.Editor
 			//Ensure all properties are set
 			SetProperties(property);
 			//add initial padding
-			float totalHeight = initialVerticalPaddingHeight;
+			float totalHeight = EditorTool.InitialVerticalPadding;
 			//add label
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//add unique id
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//Add Text height
-			totalHeight += GetAddedHeight(GetHeight(name));
+			totalHeight += EditorTool.GetAddedHeight(EditorTool.GetHeight(name));
 			//Add tag height
-			totalHeight += GetAddedHeight(GetTagHeight(property));
+			totalHeight += EditorTool.GetAddedHeight(GetTagHeight(property));
 			//add padding
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			return totalHeight;
 		}
 
@@ -93,16 +91,16 @@ namespace DSA.Extensions.Conversations.Editor
 			SetProperties(property);
 			float totalHeight = 0F;
 			// add tag type
-			totalHeight += GetAddedHeight(GetHeight(tagType));
+			totalHeight += EditorTool.GetAddedHeight(EditorTool.GetHeight(tagType));
 			switch (tagType.intValue)
 			{
 				case 2:
 					//add text height
-					totalHeight += GetAddedHeight(lineHeight);
+					totalHeight += EditorTool.AddedLineHeight;
 					break;
 				case 3:
 					//add text height
-					totalHeight += GetAddedHeight(lineHeight);
+					totalHeight += EditorTool.AddedLineHeight;
 					break;
 			}
 			return totalHeight;

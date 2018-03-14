@@ -7,7 +7,7 @@ using DSA.Extensions.Base.Editor;
 using DSA.Extensions.Conversations;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure.Editor
+namespace DSA.Extensions.Conversations.Editor
 {
 	//an editor window class to edit conversation json data
 	public class ConversationEditorWindow : DataEditorWindow<ConversationList>

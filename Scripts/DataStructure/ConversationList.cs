@@ -5,22 +5,13 @@ using System.Linq;
 using System;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class ConversationList : NestedBaseData<Conversation>, ICatalogued<string, Conversation>, IDefault
 	{
-		[SerializeField] private string name;
-		[SerializeField] private int id;
 		[SerializeField] private ConversationDefualts conversationDefaults;
-		[SerializeField] private string continueText;
-		[SerializeField] private string endText;
-		[SerializeField] private List<Conversation> conversations;
 		private Dictionary<string, Conversation> dictionary;
-
-		public override int ID { get { return id; } }
-
-		public override string Text { get { return name; } }
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convList";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convList"; return serializedUniqueIDPrefix; } }
@@ -30,9 +21,9 @@ namespace DSA.Extensions.Conversations.DataStructure
 			if (dictionary == null)
 			{
 				dictionary = new Dictionary<string, Conversation>();
-				for (int i = 0; i < conversations.Count; i++)
+				for (int i = 0; i < dataArray.Length; i++)
 				{
-					dictionary.Add(conversations[i].Text, conversations[i]);
+					dictionary.Add(dataArray[i].Text, dataArray[i]);
 				}
 			}
 			return dictionary;
@@ -42,31 +33,16 @@ namespace DSA.Extensions.Conversations.DataStructure
 		{
 			id = -1;
 			name = "Conversation List";
-			for (int i = 0; i < conversations.Count; i++)
+			for (int i = 0; i < dataArray.Length; i++)
 			{
-				conversations[i].SetDefault(conversationDefaults, i);
+				dataArray[i].SetDefault(conversationDefaults, i);
 			}
 			List<string> uniqueIDs = GetUniqueIDs();
 		}
 
-		public override DataItem[] GetArray()
-		{
-			return conversations.ToArray();
-		}
-
-		protected override void SetArray(Conversation[] sentData)
-		{
-			throw new NotImplementedException();
-		}
-
-		public ConversationList(Conversation[] sentArray) : base(sentArray)
-		{
-			conversations = sentArray.ToList();
-		}
-
 		public override List<string> GetUniqueIDs()
 		{
-			List<string> tempList = GetChildUniqueIDs<Conversation>(conversations);
+			List<string> tempList = GetChildUniqueIDs<Conversation>(dataArray.ToList());
 			tempList.Add(uniqueID);
 			return tempList;
 		}
@@ -75,6 +51,20 @@ namespace DSA.Extensions.Conversations.DataStructure
 		{
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
 			SetChildUnqueIDs(sentProvider);
+		}
+
+		public override string GetEndLabelText()
+		{
+			string unitText = "Conversations";
+			if (dataArray.Length == 1) { unitText = "Conversation"; }
+			return "[" + dataArray.Length + " " + unitText + "]";
+		}
+
+		public override void SetAsNew()
+		{
+			name = "New Conversation List";
+			dataArray = new Conversation[0];
+			uniqueID = null;
 		}
 	}
 }

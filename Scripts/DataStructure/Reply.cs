@@ -4,16 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class Reply : DataItem, IProvider<ReplyTag>
 	{
-		[SerializeField] private string name;
-		public override string Text { get { return name; } }
-		[HideInInspector] [SerializeField] private int id;
-		public override int ID { get { return id; } }
-
 		[SerializeField] private ReplyTag tag;
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convReply";
@@ -42,5 +37,23 @@ namespace DSA.Extensions.Conversations.DataStructure
 		{
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
 		}
+
+		public override string GetLabelText()
+		{
+			return name;
+		}
+
+		public override string GetEndLabelText()
+		{
+			return null;
+		}
+
+		public override void SetAsNew()
+		{
+			name = "New Reply";
+			tag = new ReplyTag(ReplyTag.TagType.None);
+			uniqueID = null;
+		}
+
 	}
 }

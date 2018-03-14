@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public struct ConversationDefualts

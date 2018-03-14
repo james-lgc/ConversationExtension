@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using System;
 
 namespace DSA.Extensions.Conversations

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using DSA.Extensions.Base.Editor;
 
 namespace DSA.Extensions.Conversations.Editor
@@ -11,7 +11,6 @@ namespace DSA.Extensions.Conversations.Editor
 	[CustomPropertyDrawer(typeof(ConversationDefualts))]
 	//Overrides how Reply.Tag class is displayed in Unity Editor
 	//Adds a reorderable list with edit buttons to show nested data
-	//Inherits from BasePropertyDrawer to access custom defaults
 	public class ConversationDefaultsDrawer : BasePropertyDrawer
 	{
 		private static SerializedProperty continueText;
@@ -31,23 +30,23 @@ namespace DSA.Extensions.Conversations.Editor
 			SetProperties(property);
 
 			//draw defaults label
-			Rect newPostion = DrawTopLabel(position, "Defaults");
+			Rect newPostion = EditorTool.DrawTopLabel(position, "Defaults");
 			//draw continue text
-			newPostion = DrawTextField(newPostion, continueText, "Reply");
+			newPostion = EditorTool.DrawTextField(newPostion, continueText, "Reply");
 			//draw end text
-			newPostion = DrawTextField(newPostion, endText, "Last Reply");
+			newPostion = EditorTool.DrawTextField(newPostion, endText, "Last Reply");
 		}
 
 		//Calculate the height of this property
 		public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
 		{
-			float totalHeight = initialVerticalPaddingHeight;
+			float totalHeight = EditorTool.InitialVerticalPadding;
 			//label
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//continue text
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//end text
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			return totalHeight;
 		}
 	}

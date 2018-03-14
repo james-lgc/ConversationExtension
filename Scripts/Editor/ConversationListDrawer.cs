@@ -3,15 +3,13 @@ using UnityEditor;
 using System.Reflection;
 using DSA.Extensions.Base.Editor;
 
-namespace DSA.Extensions.Conversations.DataStructure.Editor
+namespace DSA.Extensions.Conversations.Editor
 {
 	[CustomPropertyDrawer(typeof(ConversationList))]
 	//Overrides how ConversationList class is displayed in Unity Editor
 	//Adds a reorderable list with edit buttons to show nested data
-	//Inherits from BasePropertyDrawer to access custom defaults
-	public class ConversationListDrawer : DataItemDrawer
+	public class ConversationListDrawer : BaseConversationDrawer
 	{
-		private SerializedProperty conversations;
 		private UnityEditorInternal.ReorderableList reorderableList;
 		private SerializedProperty conversationDefaults;
 
@@ -25,18 +23,9 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			base.SetProperties(sentProperty);
 			//Find child properties in this property
 			conversationDefaults = sentProperty.FindPropertyRelative("conversationDefaults");
-			conversations = sentProperty.FindPropertyRelative("conversations");
 			uniqueID = sentProperty.FindPropertyRelative("uniqueID");
 			defaultRepy = conversationDefaults.FindPropertyRelative("continueText");
 			defaultEndReply = conversationDefaults.FindPropertyRelative("endText");
-			//create action for edit button in list
-			//action opens property in conversation window
-			System.Action<SerializedProperty> editAction = DSA.Extensions.Conversations.DataStructure.Editor.ConversationEditorWindow.Init;
-			//method to return a string showing number of child elements in list item
-			System.Func<SerializedProperty, string> endTextFunc = (SerializedProperty arrayProperty) =>
-			{
-				return GetArrayCountString(arrayProperty, "stages", "Stage", "Stages");
-			};
 			//action overrides copied values and generates unique id
 			System.Action<UnityEditorInternal.ReorderableList> addAction = (UnityEditorInternal.ReorderableList list) =>
 			{
@@ -46,7 +35,7 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 				element.FindPropertyRelative("stages").arraySize = 0;
 			};
 			//create list
-			reorderableList = GetDefaultEditButtonList(conversations, "Conversations", editAction, endTextFunc, addAction);
+			reorderableList = GetDefaultEditButtonList(dataArray, "Conversations");
 		}
 
 		//called from base OnGUI, handles child property drawing
@@ -57,10 +46,10 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			//draw unique id
 			newPosition = DrawUniqueID(newPosition);
 			//draw defaults
-			newPosition = DrawTextField(newPosition, defaultRepy, "Default Reply");
-			newPosition = DrawTextField(newPosition, defaultEndReply, "Default End Reply");
+			newPosition = EditorTool.DrawTextField(newPosition, defaultRepy, "Default Reply");
+			newPosition = EditorTool.DrawTextField(newPosition, defaultEndReply, "Default End Reply");
 			//draw conversations
-			newPosition = DrawReorderableList(newPosition, reorderableList, "Conversations");
+			newPosition = EditorTool.DrawReorderableList(newPosition, reorderableList, "Conversations");
 		}
 
 		//calculate the height of this property
@@ -68,18 +57,18 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 		{
 			SetProperties(property);
 			//additional start padding
-			float totalHeight = initialVerticalPaddingHeight;
+			float totalHeight = EditorTool.InitialVerticalPadding;
 			//unique id
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//defaults
-			totalHeight += GetAddedHeight(lineHeight);
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
+			totalHeight += EditorTool.AddedLineHeight;
 			//conversations label
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			//conversations
-			totalHeight += GetAddedHeight(reorderableList.GetHeight());
+			totalHeight += EditorTool.GetAddedHeight(reorderableList.GetHeight());
 			//end padding
-			totalHeight += GetAddedHeight(lineHeight);
+			totalHeight += EditorTool.AddedLineHeight;
 			return totalHeight;
 		}
 	}

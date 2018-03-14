@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DSA.Extensions.Conversations;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 
 [System.Serializable]
 public class ConversationProgressTracker

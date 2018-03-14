@@ -1,25 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using UnityEditor;
 using System;
 using DSA.Extensions.Base.Editor;
 
-namespace DSA.Extensions.Conversations.DataStructure.Editor
+namespace DSA.Extensions.Conversations.Editor
 {
 	[CustomPropertyDrawer(typeof(Stage))]
 	//Overrides how Stage class is displayed in Unity Editor
 	//Adds a reorderable list with edit buttons to show nested data
-	//Inherits from BasePropertyDrawer to access custom defaults
-	public class StageDrawer : DataItemDrawer
+	public class StageDrawer : BaseConversationDrawer
 	{
 		private UnityEditorInternal.ReorderableList firstBranchesList;
 		private UnityEditorInternal.ReorderableList secondBranchesList;
 		private SerializedProperty topic;
 		private SerializedProperty identifier;
-		private SerializedProperty firstBranches;
-		private SerializedProperty secondBranches;
+		private SerializedProperty secondDataArray;
 
 		//Ensure all properties are set
 		protected override void SetProperties(SerializedProperty sentProperty)
@@ -28,18 +26,9 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			base.SetProperties(sentProperty);
 			//set child properties
 			topic = sentProperty.FindPropertyRelative("name");
-			firstBranches = sentProperty.FindPropertyRelative("firstBranches");
-			secondBranches = sentProperty.FindPropertyRelative("secondBranches");
+			secondDataArray = sentProperty.FindPropertyRelative("secondDataArray");
 			uniqueID = sentProperty.FindPropertyRelative("uniqueID");
 			identifier = sentProperty.FindPropertyRelative("identifier");
-			//create action for edit button in list
-			//action opens property in conversation window
-			System.Action<SerializedProperty> editAction = DSA.Extensions.Conversations.DataStructure.Editor.ConversationEditorWindow.Init;
-			//method to return a string showing number of child elements in list item
-			System.Func<SerializedProperty, string> endTextFunc = (SerializedProperty arrayProperty) =>
-			{
-				return GetArrayCountString(arrayProperty, "lines", "Line", "Lines");
-			};
 			//action overrides copied values and generates unique id
 			System.Action<UnityEditorInternal.ReorderableList> addAction = (UnityEditorInternal.ReorderableList list) =>
 			{
@@ -49,8 +38,8 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 				element.FindPropertyRelative("lines").arraySize = 0;
 			};
 			//create lists
-			firstBranchesList = GetDefaultEditButtonList(firstBranches, "First Branches", editAction, endTextFunc, addAction);
-			secondBranchesList = GetDefaultEditButtonList(secondBranches, "Second Branches", editAction, endTextFunc, addAction);
+			firstBranchesList = GetDefaultEditButtonList(dataArray, "First Branches");
+			secondBranchesList = GetDefaultEditButtonList(secondDataArray, "Second Branches");
 		}
 
 		//called from base OnGUI, handles child property drawing
@@ -61,13 +50,13 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 			//draw unique id
 			newPosition = DrawUniqueID(newPosition);
 			//draw name field
-			newPosition = DrawTextField(newPosition, topic, "Topic");
+			newPosition = EditorTool.DrawTextField(newPosition, topic, "Topic");
 			//draw identifier
 			newPosition = EditorTool.DrawArray(newPosition, identifier, "Identifier");
 			//newPosition = new Rect(newPosition.x, newPosition.y + lineHeight, newPosition.width, 50F);
 			//draw branches
-			newPosition = DrawReorderableList(newPosition, firstBranchesList, "Branches");
-			newPosition = DrawReorderableList(newPosition, secondBranchesList, null);
+			newPosition = EditorTool.DrawReorderableList(newPosition, firstBranchesList, "Branches");
+			newPosition = EditorTool.DrawReorderableList(newPosition, secondBranchesList, null);
 		}
 
 		//Calculate the height of this property
@@ -75,27 +64,27 @@ namespace DSA.Extensions.Conversations.DataStructure.Editor
 		{
 			//Ensure all properties are set
 			SetProperties(property);
-			float totalHeight = initialVerticalPaddingHeight;
+			float totalHeight = EditorTool.InitialVerticalPadding;
 			//add topic label
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
+			totalHeight = totalHeight + EditorTool.AddedLineHeight;
 			//add topic field
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
+			totalHeight = totalHeight + EditorTool.AddedLineHeight;
 			//add identifier
-			float identifierHeight = GetAddedHeight(lineHeight);
+			float identifierHeight = EditorTool.AddedLineHeight;
 			for (int i = 0; i < identifier.arraySize; i++)
 			{
-				identifierHeight += GetAddedHeight(GetHeight(identifier.GetArrayElementAtIndex(i)));
+				identifierHeight += EditorTool.GetAddedHeight(EditorTool.GetHeight(identifier.GetArrayElementAtIndex(i)));
 			}
 			totalHeight += identifierHeight;
 			//add branches label
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
+			totalHeight = totalHeight + EditorTool.AddedLineHeight;
 
 			//add first branch
-			totalHeight = totalHeight + GetAddedHeight(firstBranchesList.GetHeight());
+			totalHeight += EditorTool.GetAddedHeight(firstBranchesList.GetHeight());
 			//add second branch
-			totalHeight = totalHeight + GetAddedHeight(secondBranchesList.GetHeight());
+			totalHeight += EditorTool.GetAddedHeight(secondBranchesList.GetHeight());
 			//add final line height for padding
-			totalHeight = totalHeight + GetAddedHeight(lineHeight);
+			totalHeight = totalHeight + EditorTool.AddedLineHeight;
 			return totalHeight;
 		}
 	}

@@ -6,31 +6,26 @@ using System.Linq;
 using DSA.Extensions.Base;
 
 namespace
-DSA.Extensions.Conversations.DataStructure
+DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class Stage : NestedBaseData<DialougeBranch>, ISettable<string, int, bool>, IProvider<int[]>, IConditional, IDefault<ConversationDefualts, int>
 	{
-		[SerializeField] private string name;
-		public override string Text { get { return name; } }
 		[SerializeField] private int[] identifier;
-		[HideInInspector] [SerializeField] private int id;
-		public override int ID { get { return id; } }
 		[HideInInspector] [SerializeField] private bool isUsed;
 		public bool IsUsed { get { return isUsed; } }
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convStage";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convStage"; return serializedUniqueIDPrefix; } }
 
-		[Header("Branches")] [SerializeField] private DialougeBranch[] firstBranches;
-		[SerializeField] private DialougeBranch[] secondBranches;
+		[SerializeField] private DialougeBranch[] secondDataArray;
 		public DialougeBranch[] GetBranches()
 		{
 			if (!isUsed)
 			{
-				return firstBranches;
+				return dataArray;
 			}
-			return secondBranches;
+			return secondDataArray;
 		}
 
 		public Stage(DialougeBranch[] sentArray, DialougeBranch[] sentSecondBranch = null, string sentTopic = null, int sentID = -1, bool sentIsUsed = false) : base(sentArray)
@@ -44,13 +39,13 @@ DSA.Extensions.Conversations.DataStructure
 
 		public override DataItem[] GetArray()
 		{
-			if (!isUsed) { return firstBranches; }
-			return secondBranches;
+			if (!isUsed) { return dataArray; }
+			return secondDataArray;
 		}
 
 		protected override void SetArray(DialougeBranch[] sentData)
 		{
-			firstBranches = sentData;
+			dataArray = sentData;
 		}
 
 		public void Set(string sentItem1 = null, int sentItem2 = -1, bool sentItem3 = false)
@@ -73,8 +68,8 @@ DSA.Extensions.Conversations.DataStructure
 		public void SetDefault(ConversationDefualts sentItem1, int sentItem2)
 		{
 			id = sentItem2;
-			SetDefaultBranches(firstBranches, sentItem1, 0);
-			SetDefaultBranches(secondBranches, sentItem1, 1);
+			SetDefaultBranches(dataArray, sentItem1, 0);
+			SetDefaultBranches(secondDataArray, sentItem1, 1);
 		}
 
 		private void SetDefaultBranches(DialougeBranch[] sentBranches, ConversationDefualts sentItem, int sentItem2)
@@ -92,8 +87,8 @@ DSA.Extensions.Conversations.DataStructure
 
 		public override List<string> GetUniqueIDs()
 		{
-			List<string> tempList = GetChildUniqueIDs(firstBranches);
-			tempList = tempList.Concat(GetChildUniqueIDs(secondBranches)).ToList();
+			List<string> tempList = GetChildUniqueIDs(dataArray);
+			tempList = tempList.Concat(GetChildUniqueIDs(secondDataArray)).ToList();
 			tempList.Add(uniqueID);
 			return tempList;
 		}
@@ -111,8 +106,27 @@ DSA.Extensions.Conversations.DataStructure
 		public override void SetUniqueID(IProvider<string, string, string> sentProvider)
 		{
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
-			SetArrayUniqueIDs(firstBranches, sentProvider);
-			SetArrayUniqueIDs(secondBranches, sentProvider);
+			SetArrayUniqueIDs(dataArray, sentProvider);
+			SetArrayUniqueIDs(secondDataArray, sentProvider);
+		}
+
+		public override string GetEndLabelText()
+		{
+			string identifierText = null;
+			if (identifier.Length > 0) { identifierText = identifier[0].ToString(); }
+			for (int i = 1; i < identifier.Length; i++)
+			{
+				identifierText += "." + identifier[i].ToString();
+			}
+			return "[" + identifierText + "]";
+		}
+
+		public override void SetAsNew()
+		{
+			name = "New Stage";
+			uniqueID = null;
+			dataArray = new DialougeBranch[0];
+			secondDataArray = new DialougeBranch[0];
 		}
 	}
 }

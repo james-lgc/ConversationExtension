@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using System;
 using DSA.Extensions.Base;
 

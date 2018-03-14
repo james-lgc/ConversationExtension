@@ -5,18 +5,13 @@ using UnityEngine;
 using System.Linq;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class Line : NestedBaseData<Reply>, ISettable<string, int, bool, LineTag>, IProvider<LineTag>, IConditional, IDefault<Reply[], int>
 	{
-		[TextArea] [SerializeField] private string name;
-		public override string Text { get { return name; } }
-		[HideInInspector] [SerializeField] private int id;
-		public override int ID { get { return id; } }
 		[SerializeField] private LineTag tag;
 		[SerializeField] private bool useDefaultReply;
-		[SerializeField] private Reply[] replies;
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convLine";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convLine"; return serializedUniqueIDPrefix; } }
@@ -37,16 +32,6 @@ namespace DSA.Extensions.Conversations.DataStructure
 			id = sentItem2;
 			useDefaultReply = sentItem3;
 			tag = sentItem4;
-		}
-
-		public override DataItem[] GetArray()
-		{
-			return replies;
-		}
-
-		protected override void SetArray(Reply[] sentData)
-		{
-			replies = sentData;
 		}
 
 		public LineTag GetItem()
@@ -72,7 +57,7 @@ namespace DSA.Extensions.Conversations.DataStructure
 
 		public override List<string> GetUniqueIDs()
 		{
-			List<string> tempList = GetChildUniqueIDs(replies);
+			List<string> tempList = GetChildUniqueIDs(dataArray);
 			tempList.Add(uniqueID);
 			tempList.Add(tag.UniqueID);
 			return tempList;
@@ -83,6 +68,20 @@ namespace DSA.Extensions.Conversations.DataStructure
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
 			SetChildUnqueIDs(sentProvider);
 			tag.SetUniqueID(sentProvider);
+		}
+
+		public override string GetEndLabelText()
+		{
+			string unitText = "Replies";
+			if (dataArray.Length == 1) { unitText = "Reply"; }
+			return "[" + dataArray.Length + " " + unitText + "]";
+		}
+		public override void SetAsNew()
+		{
+			name = "New Line";
+			dataArray = new Reply[0];
+			uniqueID = null;
+			tag = new LineTag(LineTag.TagType.None);
 		}
 	}
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-using DSA.Extensions.Conversations.DataStructure;
+using DSA.Extensions.Conversations;
 using DSA.Extensions.Base;
 
 namespace DSA.Extensions.Conversations

@@ -103,44 +103,44 @@ MonoBehaviour:
   - '#convLineTag#y5haWQtWX1CP'
   - '#convLineTag#yrChyy58tvO8'
   - '#convList#qp5MfWMbBidO'
-  - '#convReply#0saabpcXWcHf'
-  - '#convReply#2J5cm4Sc8m8S'
-  - '#convReply#41ZrAVCsR3fj'
-  - '#convReply#4pPNep2elAoe'
-  - '#convReply#5KNSfTqQ3Gj0'
-  - '#convReply#8K3gM2bejJZW'
-  - '#convReply#9IYdgA4i5152'
-  - '#convReply#a5S93WypvrOQ'
-  - '#convReply#BmoATfylXZMt'
-  - '#convReply#CxFAYgYMnRlf'
-  - '#convReply#ed5mTqCrp1st'
-  - '#convReply#FzKC1HqXKGKJ'
-  - '#convReply#gIsv6bv7pEz2'
-  - '#convReply#GJysDM1kiwC7'
-  - '#convReply#GK5s1xauThDA'
-  - '#convReply#gOtv0ni4epQB'
-  - '#convReply#gt5KfxjKAVQi'
-  - '#convReply#ILcKokMypb3C'
-  - '#convReply#kmzH44r0FCa9'
-  - '#convReply#MSKbGYj0Jhi2'
-  - '#convReply#nK9FO6P8toER'
-  - '#convReply#NzZCjs5px11q'
-  - '#convReply#OCa9Js8aoJ9Z'
-  - '#convReply#Q5S5GMvy29Tz'
-  - '#convReply#sG2bV4kULBKU'
-  - '#convReply#Sho6c6EqBOcg'
-  - '#convReply#SKExjiBqkp8E'
-  - '#convReply#Tyqcu23D1dvA'
-  - '#convReply#UawEXxZ8sFjC'
-  - '#convReply#Vd5LjiTEa0Ut'
-  - '#convReply#vfltl7x9vnik'
-  - '#convReply#Vq85Rbg8wIw7'
-  - '#convReply#W1FEgsFtK8Pb'
-  - '#convReply#W4DJ1DkMluyn'
-  - '#convReply#wCjZuEqmq9pS'
-  - '#convReply#wjVBjM8XqZxi'
-  - '#convReply#xdX8dsaqbHvq'
-  - '#convReply#Yl0bbrR1h5Nu'
+  - '#convReply#0c5kHbrybnBb'
+  - '#convReply#13uCoG1QpFqq'
+  - '#convReply#18uikQNNyoQV'
+  - '#convReply#5jajD4VjSlEy'
+  - '#convReply#6bMpJtI6t3UT'
+  - '#convReply#7FCN6gyrBuu9'
+  - '#convReply#8zJkwcGxx7n2'
+  - '#convReply#akGfqzVfKRTm'
+  - '#convReply#c1s17IqmAazQ'
+  - '#convReply#cSdqBBqREQ6j'
+  - '#convReply#dci46bExbQLp'
+  - '#convReply#Dga6TrZKDz2e'
+  - '#convReply#dw2PVGot1vqA'
+  - '#convReply#E4xS0gMHtFRy'
+  - '#convReply#eNoGwN4lcVjH'
+  - '#convReply#gM7lWYIPECl4'
+  - '#convReply#iptdvx2cHKI8'
+  - '#convReply#jIX6yxVjI6gY'
+  - '#convReply#KdFWhFxqYRRi'
+  - '#convReply#lneWBycs3mAZ'
+  - '#convReply#Nmcix80BaKdE'
+  - '#convReply#oUSqA2TGNkzK'
+  - '#convReply#pGLTWsrwfj0K'
+  - '#convReply#pWhcIyK09uzv'
+  - '#convReply#rMhty41iw8Wp'
+  - '#convReply#rSbKpaklGcGH'
+  - '#convReply#scjhCjnCVm49'
+  - '#convReply#TClIb4E0fLpi'
+  - '#convReply#tYqYPHB5ETEV'
+  - '#convReply#u4iabgdIzERT'
+  - '#convReply#uhfDH2UBhTjl'
+  - '#convReply#vLTuVarTGfru'
+  - '#convReply#vXHy6bI2EjIM'
+  - '#convReply#Wd8dW2LbIKwu'
+  - '#convReply#yC8YPiuSB8gG'
+  - '#convReply#YrcNuFjmH2cu'
+  - '#convReply#ZAhgHDz3uGOc'
+  - '#convReply#ZjZGGMHqgsqJ'
   - '#convStage#3LSIwLuXgZts'
   - '#convStage#HOo4uusMTW9X'
   - '#convStage#tEk7NESzzdXl'
@@ -149,54 +149,42 @@ MonoBehaviour:
     uniqueID: '#convList#qp5MfWMbBidO'
     name: Conversation List
     id: -1
-    conversationDefaults:
-      continueText: Continue
-      endText: End
-      conversationListPrefix: 
-      conversationPrefix: 
-      stagePrefix: 
-      branchPrefix: 
-      linePrefix: 
-      lineTagPrefix: 
-      replyPrefix: 
-    continueText: Continue
-    endText: End
-    conversations:
+    isExpanded: 1
+    dataArray:
     - uniqueID: '#conv#6LGf0G1WMFOG'
       name: Detective Jones
       id: 0
-      topicQuestion: What would you like to talk about?
-      serializedUniqueIDPrefix: conv
-      defaultStage:
-        uniqueID: 
-        name: 
-        identifier: 
-        id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: 
-        firstBranches: []
-        secondBranches: []
-      stages:
+      isExpanded: 1
+      dataArray:
       - uniqueID: '#convStage#HOo4uusMTW9X'
         name: Introduction
-        identifier: 01000000000000000000000000000000
         id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: convStage
-        firstBranches:
+        isExpanded: 1
+        dataArray:
         - uniqueID: '#convBranch#P9S9TSwcQFtY'
           name: Introduction
           id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 1
+          dataArray:
           - uniqueID: '#convLine#Y1eul0kLA9tK'
             name: Here we are, this is the Wakefield residence.
             id: 0
+            isExpanded: 1
+            dataArray:
+            - uniqueID: '#convReply#vLTuVarTGfru'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#yrChyy58tvO8'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -207,24 +195,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#nK9FO6P8toER'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#SO9fQkdSQzsd'
             name: Olivia's parents never moved away after she disappeared.  If you
               ask me, they should have.
             id: 1
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#0c5kHbrybnBb'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#JsaYgrAAkdF4'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -235,23 +226,26 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#UawEXxZ8sFjC'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#fFZT23exwxtf'
             name: They had money saved away before the case went cold.
             id: 2
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#Nmcix80BaKdE'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#xJiVRWAvvCJk'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -262,24 +256,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#9IYdgA4i5152'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#Okc9RGfivMBn'
             name: We had search parties tearing up the county, day and night.  Almost
               every local cop would join one as a volunteer after their shift ended.
             id: 3
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#eNoGwN4lcVjH'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#NVbtJx8EXF8l'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -290,25 +287,28 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#OCa9Js8aoJ9Z'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#22yr2IEuZJHm'
             name: We were all running on coffee and fumes for the first few weeks,
               but a rational man can only cover the same ground so many times before
               the realisation sets in.
             id: 4
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#ZjZGGMHqgsqJ'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#c84Ljz36ItIg'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -319,23 +319,26 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#W1FEgsFtK8Pb'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#wF2f4e4c2ZdG'
             name: I guess rationality isn't part of the equation when it's your kid.
             id: 5
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#yC8YPiuSB8gG'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#UxgAaVq9CQTV'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -346,24 +349,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#sG2bV4kULBKU'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#yaykMkAsZ4fL'
             name: Anyways, the Wakefield's never could accept that Olivia was gone
               for good.
             id: 6
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#jIX6yxVjI6gY'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#bWSLknWj6CvY'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -374,25 +380,28 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#2J5cm4Sc8m8S'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#tDZICU0uPhmR'
             name: Once life settled back into routine for most folks, they poured
               every penny they had into awareness programs, private investigators,
               anything they could think of.
             id: 7
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#7FCN6gyrBuu9'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#XEXovOcx3dFA'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -403,25 +412,28 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#8K3gM2bejJZW'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#XyjT0imOeizv'
             name: Eventually, the money dried up.  Marcus, Oliva's father, owns a
               fishing store here in town.  Every so often they scrape together enough
               to bring in some new clown to chase down dead ends.
             id: 8
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#Dga6TrZKDz2e'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#ODFqNWctZEXb'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -432,24 +444,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#gt5KfxjKAVQi'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#l89E0RuTLg3b'
             name: And I guess that brings us to you.  Go on inside and talk to them,
               but don't expect a warm reception from the folks who live around here.
             id: 9
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#ZAhgHDz3uGOc'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#VBBXv0PxlNTy'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -460,24 +475,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#0saabpcXWcHf'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#q5rRlv6knMli'
             name: We've seen too many vultures feeding on that family to spare you
               a second thought.
             id: 10
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#8zJkwcGxx7n2'
+              name: End
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 1
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#EFukjmvReh7l'
-              tagType: 3
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 3
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -488,29 +506,36 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 3
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#SKExjiBqkp8E'
+            serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+        identifier: 01000000000000000000000000000000
+        isUsed: 0
+        serializedUniqueIDPrefix: convStage
+        secondDataArray:
+        - uniqueID: '#convBranch#AF9iVcxETRaA'
+          name: Brush off
+          id: 0
+          isExpanded: 0
+          dataArray:
+          - uniqueID: '#convLine#gPsk4uRJe1M8'
+            name: I've said everything I have to say to you.
+            id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#oUSqA2TGNkzK'
               name: End
               id: 0
+              isExpanded: 0
               tag:
                 tagType: 1
                 id: 0
               serializedUniqueIDPrefix: convReply
-            serializedUniqueIDPrefix: convLine
-        secondBranches:
-        - uniqueID: '#convBranch#AF9iVcxETRaA'
-          name: Brush off
-          id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
-          - uniqueID: '#convLine#gPsk4uRJe1M8'
-            name: I've said everything I have to say to you.
-            id: 0
             tag:
               uniqueID: '#convLineTag#wAjspT4dWFnX'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -521,50 +546,52 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#41ZrAVCsR3fj'
-              name: End
-              id: 0
-              tag:
-                tagType: 1
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+      topicQuestion: What would you like to talk about?
+      serializedUniqueIDPrefix: conv
     - uniqueID: '#conv#6KstEm2ZAhQH'
       name: Jennifer Wakefield
       id: 1
-      topicQuestion: What would you like to talk about?
-      serializedUniqueIDPrefix: conv
-      defaultStage:
-        uniqueID: 
-        name: 
-        identifier: 
-        id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: 
-        firstBranches: []
-        secondBranches: []
-      stages:
+      isExpanded: 0
+      dataArray:
       - uniqueID: '#convStage#3LSIwLuXgZts'
         name: Introduction
-        identifier: 01000000000000000000000001000000
         id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: convStage
-        firstBranches:
+        isExpanded: 0
+        dataArray:
         - uniqueID: '#convBranch#sHbNw1xBCEl9'
           name: Introduction
           id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 0
+          dataArray:
           - uniqueID: '#convLine#3gwG9Prz9fLY'
             name: Hi, thanks for coming.  Can I get you anything?  Coffee?
             id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#vXHy6bI2EjIM'
+              name: Yes please
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 3
+                id: 1
+              serializedUniqueIDPrefix: convReply
+            - uniqueID: '#convReply#akGfqzVfKRTm'
+              name: No thanks
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 3
+                id: 2
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#6qBI80fAFlU1'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -575,35 +602,32 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 0
-            replies:
-            - uniqueID: '#convReply#MSKbGYj0Jhi2'
-              name: Yes Please, coffee would be great
-              id: 0
-              tag:
-                tagType: 3
-                id: 1
-              serializedUniqueIDPrefix: convReply
-            - uniqueID: '#convReply#vfltl7x9vnik'
-              name: No thanks.
-              id: 0
-              tag:
-                tagType: 3
-                id: 2
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
         - uniqueID: '#convBranch#Z9xskW5PVTMH'
           name: Yes Coffee
           id: 1
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 0
+          dataArray:
           - uniqueID: '#convLine#uGgWhkCqGwg5'
             name: Sorry.  On second thoughts, I think we're out.
             id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#tYqYPHB5ETEV'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#bd5nQkAOmvxC'
-              tagType: 4
+              name: 
               id: 3
-              text: 
+              isExpanded: 0
+              tagType: 4
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -614,28 +638,32 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#gOtv0ni4epQB'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
         - uniqueID: '#convBranch#CDAYlri2GS8O'
           name: No Coffee
           id: 2
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 0
+          dataArray:
           - uniqueID: '#convLine#wD7FJE8BjgQq'
             name: If you need one later, Yanna at the diner make a mean cappuccino
             id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#dci46bExbQLp'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#geMsBhF3rxJE'
-              tagType: 4
+              name: 
               id: 3
-              text: 
+              isExpanded: 0
+              tagType: 4
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -646,29 +674,33 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#gIsv6bv7pEz2'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
         - uniqueID: '#convBranch#9tTzE4FtXMgg'
           name: Post Coffee Decision
           id: 3
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 0
+          dataArray:
           - uniqueID: '#convLine#sRa0yqdWlopF'
             name: I'm sure you have a lot of questions about Olivia...  I just don't
               think I'm up to answering right now.
             id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#gM7lWYIPECl4'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#MoZxHIhrFq5F'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -679,24 +711,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#5KNSfTqQ3Gj0'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#QYoO1d451CHk'
             name: I bumped into her old Science teacher, Mr. Barrington, today at
               the store.
             id: 1
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#YrcNuFjmH2cu'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#y5haWQtWX1CP'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -707,23 +742,26 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Sho6c6EqBOcg'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#wejl91BGMljw'
             name: The summer she...
             id: 2
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#KdFWhFxqYRRi'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#266U9yRaRqKi'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -734,24 +772,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#kmzH44r0FCa9'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#VdAc5X3qj4HG'
             name: Mr.  Barrington had been running a summer Science club for some
               of the kids.  Science was always Olivia's favourite subject.
             id: 3
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#dw2PVGot1vqA'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#V5zOCPW3YcxM'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -762,23 +803,26 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#ed5mTqCrp1st'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#tFMNlqo7lCyl'
             name: I mean "is".  It is her favourite subject.
             id: 4
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#6bMpJtI6t3UT'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#de7XMssg4wzw'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -789,23 +833,26 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Tyqcu23D1dvA'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#r4LCiLh667Dq'
             name: A few weeks before...
             id: 5
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#uhfDH2UBhTjl'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#n9TCjlw6Oxmk'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -816,24 +863,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#4pPNep2elAoe'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#mpcmGg1bbZjP'
             name: Mr.  Barrington was stood right where you're standing now.  I just
               wish...
             id: 6
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#pGLTWsrwfj0K'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#B8Y0pIaZsDXS'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -844,24 +894,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#GK5s1xauThDA'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#062EEqDmK6Or'
             name: I'm sorry, I can't talk about this right now.  It's just all too
               much.
             id: 7
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#lneWBycs3mAZ'
+              name: End
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 1
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#1TVzL3wDXrS9'
-              tagType: 3
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 3
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -872,29 +925,36 @@ MonoBehaviour:
                   stageID: 1
                 instruction: 4
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#NzZCjs5px11q'
+            serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+        identifier: 01000000000000000000000001000000
+        isUsed: 0
+        serializedUniqueIDPrefix: convStage
+        secondDataArray:
+        - uniqueID: '#convBranch#jrNZRSAf8qT7'
+          name: Can't talk any more.
+          id: 0
+          isExpanded: 0
+          dataArray:
+          - uniqueID: '#convLine#7v6xkOFghAV9'
+            name: Please...  I just want to be alone for a while.
+            id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#iptdvx2cHKI8'
               name: End
               id: 0
+              isExpanded: 0
               tag:
                 tagType: 1
                 id: 0
               serializedUniqueIDPrefix: convReply
-            serializedUniqueIDPrefix: convLine
-        secondBranches:
-        - uniqueID: '#convBranch#jrNZRSAf8qT7'
-          name: Can't talk any more.
-          id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
-          - uniqueID: '#convLine#7v6xkOFghAV9'
-            name: Please...  I just want to be alone for a while.
-            id: 0
             tag:
               uniqueID: '#convLineTag#p16ZW5qdHfGg'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -905,51 +965,45 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#xdX8dsaqbHvq'
-              name: End
-              id: 0
-              tag:
-                tagType: 1
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+      topicQuestion: What would you like to talk about?
+      serializedUniqueIDPrefix: conv
     - uniqueID: '#conv#BrBX99XFn7xt'
       name: Marcus Wakefield
       id: 2
-      topicQuestion: What would you like to talk about?
-      serializedUniqueIDPrefix: conv
-      defaultStage:
-        uniqueID: 
-        name: 
-        identifier: 
-        id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: 
-        firstBranches: []
-        secondBranches: []
-      stages:
+      isExpanded: 0
+      dataArray:
       - uniqueID: '#convStage#UZM6pek2IUGa'
         name: Introduction
-        identifier: 01000000000000000000000001000000
         id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: convStage
-        firstBranches:
+        isExpanded: 0
+        dataArray:
         - uniqueID: '#convBranch#AnHcTuNUG4RR'
           name: First meeting, info about Wilson.
           id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
+          isExpanded: 0
+          dataArray:
           - uniqueID: '#convLine#4zHAu1ibiHI6'
             name: You'll have to excuse Jenny if she can't offer much help right now.  It's
               been 5 years and she still struggles to say her name.
             id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#c1s17IqmAazQ'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#HImGBhdXxSpA'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -960,24 +1014,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#GJysDM1kiwC7'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#0HdhDmO1ITOZ'
             name: Olivia's name, I mean.  It hasn't gotten much easier for either
               of us.
             id: 1
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#u4iabgdIzERT'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#PgEcbtYbqr9i'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -988,24 +1045,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#BmoATfylXZMt'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#bZweaLAZLYfY'
             name: I hope Detective Jones didn't give you a hard time when he brought
               you here.
             id: 2
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#Wd8dW2LbIKwu'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#df652km30om0'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1016,24 +1076,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Vd5LjiTEa0Ut'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#nAkjOQGcwKat'
             name: I know what this town thinks about us.  They can keep their damn
               opinions to themselves.
             id: 3
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#cSdqBBqREQ6j'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#G98CNNt4o24S'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1044,24 +1107,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Vq85Rbg8wIw7'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#hmRmpE17Ddnk'
             name: You know, the police were a Godsend at first, including Jones.  Seemed
               like they were willing to move mountains to bring Olivia home.
             id: 4
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#rMhty41iw8Wp'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#B0uEI5YdkzhO'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1072,24 +1138,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Yl0bbrR1h5Nu'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#j9zackGZdYP6'
             name: But as the weeks dragged on, they started throwing around phrases  "Statistically",
               "Under-funded", "Not enough resources".
             id: 5
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#TClIb4E0fLpi'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#HZZ8CrJPuiqs'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1100,24 +1169,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#CxFAYgYMnRlf'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#w4OyQ7OfUxnE'
             name: Jones was one of the better cops, but I'll never forget the way
               Chief Wilson spoke to me.
             id: 6
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#E4xS0gMHtFRy'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#FkaChNI816bt'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1128,24 +1200,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#Q5S5GMvy29Tz'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#MA1FMXFh7JE2'
             name: He looked me right in the eye and talked about my daughter like
               she was a box of pencils he had to order for the detectives.
             id: 7
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#rSbKpaklGcGH'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#RE6r5NAzt64C'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1156,24 +1231,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#FzKC1HqXKGKJ'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#c9rnL5NywECO'
             name: '"Marcus, The numbers just don''t add up," he said.  And the official
               search died down.'
             id: 8
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#18uikQNNyoQV'
+              name: Continue
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 0
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#fQDi7GZjvjDJ'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1184,24 +1262,27 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#W4DJ1DkMluyn'
-              name: Continue
-              id: 0
-              tag:
-                tagType: 0
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#Z2UbyAmKuDeP'
             name: Sam Granger, owns the 7-11, kept civillian searches for as long
               as he could keep folks interested.  But I guess the town moved on eventually.
             id: 9
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#scjhCjnCVm49'
+              name: End
+              id: 0
+              isExpanded: 0
+              tag:
+                tagType: 1
+                id: 0
+              serializedUniqueIDPrefix: convReply
             tag:
               uniqueID: '#convLineTag#4C2XCczxg4ns'
-              tagType: 3
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 3
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 1
@@ -1212,29 +1293,36 @@ MonoBehaviour:
                   stageID: 1
                 instruction: 4
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#wjVBjM8XqZxi'
+            serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+        identifier: 01000000000000000000000001000000
+        isUsed: 0
+        serializedUniqueIDPrefix: convStage
+        secondDataArray:
+        - uniqueID: '#convBranch#FwaV0WDWYggI'
+          name: Have to go to work
+          id: 0
+          isExpanded: 0
+          dataArray:
+          - uniqueID: '#convLine#VbryioZwtIB9'
+            name: If you'll excuse me, I have to go open up at my store.
+            id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#pWhcIyK09uzv'
               name: End
               id: 0
+              isExpanded: 0
               tag:
                 tagType: 1
                 id: 0
               serializedUniqueIDPrefix: convReply
-            serializedUniqueIDPrefix: convLine
-        secondBranches:
-        - uniqueID: '#convBranch#FwaV0WDWYggI'
-          name: Have to go to work
-          id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
-          - uniqueID: '#convLine#VbryioZwtIB9'
-            name: If you'll excuse me, I have to go open up at my store.
-            id: 0
             tag:
               uniqueID: '#convLineTag#BnFC5McCan8P'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1245,95 +1333,44 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#ILcKokMypb3C'
+            serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+      topicQuestion: What would you like to talk about?
+      serializedUniqueIDPrefix: conv
+    - uniqueID: '#conv#zI2pWMPg1O81'
+      name: Mr. Barrington
+      id: 3
+      isExpanded: 0
+      dataArray:
+      - uniqueID: '#convStage#tEk7NESzzdXl'
+        name: Introduction
+        id: 0
+        isExpanded: 0
+        dataArray:
+        - uniqueID: '#convBranch#iIj1zRcvAfh1'
+          name: Declaration of desire for a glue buddy
+          id: 0
+          isExpanded: 0
+          dataArray:
+          - uniqueID: '#convLine#BZ3jzffniuVd'
+            name: Oogidie Boogidie, I need a glue buddy.
+            id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#5jajD4VjSlEy'
               name: End
               id: 0
+              isExpanded: 0
               tag:
                 tagType: 1
                 id: 0
               serializedUniqueIDPrefix: convReply
-            serializedUniqueIDPrefix: convLine
-    - uniqueID: '#conv#zI2pWMPg1O81'
-      name: Mr. Barrington
-      id: 3
-      topicQuestion: What would you like to talk about?
-      serializedUniqueIDPrefix: conv
-      defaultStage:
-        uniqueID: 
-        name: 
-        identifier: 
-        id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: 
-        firstBranches:
-        - uniqueID: 
-          name: Riddle
-          id: 0
-          serializedUniqueIDPrefix: 
-          lines:
-          - uniqueID: 
-            name: 
-            id: 0
-            tag:
-              uniqueID: 
-              tagType: 0
-              id: 0
-              text: 
-              serializedUniqueIDPrefix: 
-              storyInstruction:
-                stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
-                instruction: 0
-            useDefaultReply: 1
-            replies: []
-            serializedUniqueIDPrefix: 
-          - uniqueID: 
-            name: 
-            id: 0
-            tag:
-              uniqueID: 
-              tagType: 0
-              id: 0
-              text: 
-              serializedUniqueIDPrefix: 
-              storyInstruction:
-                stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
-                instruction: 0
-            useDefaultReply: 1
-            replies: []
-            serializedUniqueIDPrefix: 
-        secondBranches: []
-      stages:
-      - uniqueID: '#convStage#tEk7NESzzdXl'
-        name: Introduction
-        identifier: 01000000000000000000000001000000
-        id: 0
-        isUsed: 0
-        serializedUniqueIDPrefix: convStage
-        firstBranches:
-        - uniqueID: '#convBranch#iIj1zRcvAfh1'
-          name: Declaration of desire for a glue buddy
-          id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
-          - uniqueID: '#convLine#BZ3jzffniuVd'
-            name: Oogidie Boogidie, I need a glue buddy.
-            id: 0
             tag:
               uniqueID: '#convLineTag#jALXacDJoiey'
-              tagType: 3
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 3
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1344,29 +1381,36 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 1
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#wCjZuEqmq9pS'
+            serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+        identifier: 01000000000000000000000001000000
+        isUsed: 0
+        serializedUniqueIDPrefix: convStage
+        secondDataArray:
+        - uniqueID: '#convBranch#SnTovgUtdfgz'
+          name: Rejection of player as non glue buddy entity
+          id: 0
+          isExpanded: 0
+          dataArray:
+          - uniqueID: '#convLine#jlOweEoA1gFH'
+            name: You're not my glue buddy.  I would know if you were.
+            id: 0
+            isExpanded: 0
+            dataArray:
+            - uniqueID: '#convReply#13uCoG1QpFqq'
               name: End
               id: 0
+              isExpanded: 0
               tag:
                 tagType: 1
                 id: 0
               serializedUniqueIDPrefix: convReply
-            serializedUniqueIDPrefix: convLine
-        secondBranches:
-        - uniqueID: '#convBranch#SnTovgUtdfgz'
-          name: Rejection of player as non glue buddy entity
-          id: 0
-          serializedUniqueIDPrefix: convBranch
-          lines:
-          - uniqueID: '#convLine#jlOweEoA1gFH'
-            name: You're not my glue buddy.  I would know if you were.
-            id: 0
             tag:
               uniqueID: '#convLineTag#qIcSAgzPeeKC'
-              tagType: 0
+              name: 
               id: 0
-              text: 
+              isExpanded: 0
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
@@ -1377,13 +1421,18 @@ MonoBehaviour:
                   stageID: 0
                 instruction: 0
             useDefaultReply: 1
-            replies:
-            - uniqueID: '#convReply#a5S93WypvrOQ'
-              name: End
-              id: 0
-              tag:
-                tagType: 1
-                id: 0
-              serializedUniqueIDPrefix: convReply
             serializedUniqueIDPrefix: convLine
+          serializedUniqueIDPrefix: convBranch
+      topicQuestion: What would you like to talk about?
+      serializedUniqueIDPrefix: conv
+    conversationDefaults:
+      continueText: Continue
+      endText: End
+      conversationListPrefix: 
+      conversationPrefix: 
+      stagePrefix: 
+      branchPrefix: 
+      linePrefix: 
+      lineTagPrefix: 
+      replyPrefix: 
     serializedUniqueIDPrefix: convList

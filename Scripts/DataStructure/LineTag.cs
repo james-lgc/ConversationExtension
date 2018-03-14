@@ -4,17 +4,13 @@ using UnityEngine;
 using System;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class LineTag : DataItem, IProvider<StoryInstruction>, IEnum
 	{
 		public enum TagType { None, SpeakerName, TopicQuestion, StoryInstruct, ChangeBranch, ChangeStage };
 		[SerializeField] private TagType tagType;
-		[SerializeField] private int id;
-		public override int ID { get { return ID; } }
-		[SerializeField] private string text;
-		public override string Text { get { return text; } }
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convLineTag";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convLineTag"; return serializedUniqueIDPrefix; } }
@@ -24,14 +20,14 @@ namespace DSA.Extensions.Conversations.DataStructure
 		public LineTag(int sentTagType = 0, string sentText = "", StoryInstruction sentInstruction = default(StoryInstruction))
 		{
 			tagType = (TagType)sentTagType;
-			text = sentText;
+			name = sentText;
 			storyInstruction = sentInstruction;
 		}
 
 		public LineTag(TagType sentTagType = TagType.None, string sentText = "", StoryInstruction sentInstruction = default(StoryInstruction))
 		{
 			tagType = sentTagType;
-			text = sentText;
+			name = sentText;
 			storyInstruction = sentInstruction;
 		}
 
@@ -55,6 +51,25 @@ namespace DSA.Extensions.Conversations.DataStructure
 		public override void SetUniqueID(IProvider<string, string, string> sentProvider)
 		{
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
+		}
+
+		public override string GetLabelText()
+		{
+			throw new NotImplementedException();
+		}
+
+		public override string GetEndLabelText()
+		{
+			throw new NotImplementedException();
+		}
+
+		public override void SetAsNew()
+		{
+			name = "New LineTag";
+			tagType = TagType.None;
+			uniqueID = null;
+			storyInstruction = default(StoryInstruction);
+			id = 0;
 		}
 	}
 }

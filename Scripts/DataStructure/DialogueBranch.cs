@@ -5,20 +5,13 @@ using UnityEngine;
 using System.Linq;
 using DSA.Extensions.Base;
 
-namespace DSA.Extensions.Conversations.DataStructure
+namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
 	public class DialougeBranch : NestedBaseData<Line>, ISettable<string, int>, IDefault<ConversationDefualts, int>
 	{
-		[SerializeField] private string name;
-		public override string Text { get { return name; } }
-		[HideInInspector] [SerializeField] private int id;
-		public override int ID { get { return id; } }
-
 		[SerializeField] private string serializedUniqueIDPrefix = "convBranch";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convBranch"; return serializedUniqueIDPrefix; } }
-
-		[SerializeField] private Line[] lines;
 
 		public DialougeBranch(Line[] sentArray, string sentName = null, int sentID = -1) : base(sentArray)
 		{
@@ -31,12 +24,12 @@ namespace DSA.Extensions.Conversations.DataStructure
 
 		public override DataItem[] GetArray()
 		{
-			return lines;
+			return dataArray;
 		}
 
 		protected override void SetArray(Line[] sentData)
 		{
-			lines = sentData;
+			dataArray = sentData;
 		}
 
 		public void Set(string sentItem1, int sentItem2)
@@ -48,15 +41,15 @@ namespace DSA.Extensions.Conversations.DataStructure
 		public void SetDefault(ConversationDefualts sentItem1, int sentItem2)
 		{
 			id = sentItem2;
-			for (int i = 0; i < lines.Length; i++)
+			for (int i = 0; i < dataArray.Length; i++)
 			{
-				if (lines[i].GetIsConditionMet())
+				if (dataArray[i].GetIsConditionMet())
 				{
 					Reply[] tempReplies;
-					if (i < lines.Length - 1) { tempReplies = GetDefaultReply(sentItem1); }
+					if (i < dataArray.Length - 1) { tempReplies = GetDefaultReply(sentItem1); }
 					else
 					{
-						string tagType = lines[i].GetItem().GetEnumValue().ToString();
+						string tagType = dataArray[i].GetItem().GetEnumValue().ToString();
 						if (tagType == "ChangeBranch" || tagType == "ChangeStage")
 						{
 							tempReplies = GetDefaultReply(sentItem1);
@@ -66,7 +59,7 @@ namespace DSA.Extensions.Conversations.DataStructure
 							tempReplies = GetDefaultFinalReply(sentItem1);
 						}
 					}
-					lines[i].SetDefault(tempReplies, i);
+					dataArray[i].SetDefault(tempReplies, i);
 				}
 			}
 		}
@@ -84,7 +77,7 @@ namespace DSA.Extensions.Conversations.DataStructure
 
 		public override List<string> GetUniqueIDs()
 		{
-			List<string> tempList = GetChildUniqueIDs(lines);
+			List<string> tempList = GetChildUniqueIDs(dataArray);
 			tempList.Add(uniqueID);
 			return tempList;
 		}
@@ -93,6 +86,20 @@ namespace DSA.Extensions.Conversations.DataStructure
 		{
 			uniqueID = sentProvider.GetItem(uniqueID, uniqueIDPrefix);
 			SetChildUnqueIDs(sentProvider);
+		}
+
+		public override string GetEndLabelText()
+		{
+			string unitText = "Lines";
+			if (GetArray().Length == 1) { unitText = "Line"; }
+			return "[" + GetArray().Length + " " + unitText + "]";
+		}
+
+		public override void SetAsNew()
+		{
+			name = "New DialogueBranch";
+			dataArray = new Line[0];
+			uniqueID = null;
 		}
 	}
 }
