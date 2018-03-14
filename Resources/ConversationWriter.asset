@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695ba4443b4284fa7a472f5dc89e7d9b, type: 3}
   m_Name: ConversationWriter
   m_EditorClassIdentifier: 
-  path: Assets/Core/Extensions/Conversation/Resources/Conversations2.json
+  fileName: Conversations
   uniqueIDs:
   - '#conv#6KstEm2ZAhQH'
   - '#conv#6LGf0G1WMFOG'
