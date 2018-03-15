@@ -11,7 +11,7 @@ namespace DSA.Extensions.Conversations
 	//The displayable UI for Conversations.
 	public class ConversationCanvas : ClickableCanvas
 	{
-		public override ExtensionEnum.Extension Extension { get { return ExtensionEnum.Extension.Conversation; } }
+		public override ExtensionEnum Extension { get { return ExtensionEnum.Conversation; } }
 		private Conversation conversation;
 		private ConversationProgressTracker progressTracker;
 
@@ -19,10 +19,10 @@ namespace DSA.Extensions.Conversations
 		{
 			base.Initialize();
 			SetSendActions<DataItem>(ReceiveReply, 1);
-			IReceivable<StoryInstruction>[] storyTraits = GetReceivableArray<StoryInstruction>();
-			for (int i = 0; i < storyTraits.Length; i++)
+			IReceivable<InstructionData[]>[] instructionTraits = GetReceivableArray<InstructionData[]>();
+			for (int i = 0; i < instructionTraits.Length; i++)
 			{
-				storyTraits[i].ReceiveFunction = GetLineInstruction;
+				instructionTraits[i].ReceiveFunction = GetInstructions;
 			}
 		}
 
@@ -144,13 +144,9 @@ namespace DSA.Extensions.Conversations
 			DisplayData();
 		}
 
-		public StoryInstruction GetLineInstruction()
+		protected InstructionData[] GetInstructions()
 		{
-			if (progressTracker.currentLine.GetItem().GetEnumValue().ToString() == "StoryInstruct")
-			{
-				return progressTracker.currentLine.GetItem().GetItem();
-			}
-			return default(StoryInstruction);
+			return progressTracker.currentLine.GetItem().GetItem();
 		}
 
 		public void EndConversation()

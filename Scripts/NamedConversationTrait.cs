@@ -9,7 +9,7 @@ namespace DSA.Extensions.Conversations
 	//abstract base trait to initiate a conversation by name
 	public abstract class NamedConversationTrait : TraitBase, ISendable<Conversation>, IDataRetrievable<string, Conversation>
 	{
-		public override ExtensionEnum.Extension Extension { get { return ExtensionEnum.Extension.Conversation; } }
+		public override ExtensionEnum Extension { get { return ExtensionEnum.Conversation; } }
 
 		//name sent to manager to retrieve conversation
 		[SerializeField] private string conversorName;

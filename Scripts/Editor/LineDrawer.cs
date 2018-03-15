@@ -15,9 +15,12 @@ namespace DSA.Extensions.Conversations.Editor
 		private SerializedProperty tag;
 		private SerializedProperty useDefaultReply;
 
-		SerializedProperty tagType;
-		SerializedProperty tagName;
-		SerializedProperty storyInstruction;
+		private SerializedProperty tagType;
+		private SerializedProperty tagName;
+		private SerializedProperty storyInstruction;
+		private SerializedProperty instructions;
+		private UnityEditorInternal.ReorderableList instructionsList;
+
 
 		bool isDetailExpaned;
 
@@ -36,8 +39,10 @@ namespace DSA.Extensions.Conversations.Editor
 			tagName = tag.FindPropertyRelative("name");
 			id = tag.FindPropertyRelative("id");
 			storyInstruction = tag.FindPropertyRelative("storyInstruction");
+			instructions = tag.FindPropertyRelative("instructions");
 			System.Action<SerializedProperty> editAction = ConversationEditorWindow.Init;
 			repliesList = GetDefaultEditButtonList(dataArray, "Replies");
+			instructionsList = EditorTool.GetDefaultFullDisplayList(instructions, "Instructions");
 		}
 
 		//called from base OnGUI, handles child property drawing
@@ -72,28 +77,29 @@ namespace DSA.Extensions.Conversations.Editor
 			//Draw tagType
 			Rect newPosition = EditorTool.DrawPropertyField(position, tagType);
 			float height = newPosition.height;
+			string tagTypeName = tagType.enumNames[tagType.enumValueIndex];
 			//Draw necissary fields based on tag type
-			switch (tagType.intValue)
+			switch (tagTypeName)
 			{
-				case 1:
+				case "SpeakerName":
 					//Draw text
 					newPosition = EditorTool.DrawTextField(newPosition, tagName, "Speaker Name");
+					height += newPosition.height;
 					break;
-				case 3:
-					//Draw Story Instruction
-					newPosition = EditorTool.DrawPropertyField(newPosition, storyInstruction, usePadding: false);
+				case "ChangeBranch":
+					newPosition = EditorTool.DrawIntField(newPosition, id, "ID");
+					height += newPosition.height;
 					break;
-				case 4:
+				case "ChangeStage":
 					//draw id
 					newPosition = EditorTool.DrawIntField(newPosition, id, "ID");
-					break;
-				case 5:
-					//draw id
-					newPosition = EditorTool.DrawIntField(newPosition, id, "ID");
+					height += newPosition.height;
 					break;
 			}
+			newPosition = EditorTool.DrawReorderableList(newPosition, instructionsList, "Instructions");
 			height += newPosition.height;
 			newPosition = new Rect(newPosition.x, newPosition.y, newPosition.width, height);
+			//EditorGUI.DrawRect(newPosition, Color.blue);
 			return newPosition;
 		}
 
@@ -133,25 +139,26 @@ namespace DSA.Extensions.Conversations.Editor
 			float totalHeight = 0f;
 			//add tagtype
 			totalHeight += EditorTool.GetAddedHeight(EditorTool.GetHeight(tagType));
-			switch (tagType.intValue)
+			string tagTypeName = tagType.enumNames[tagType.enumValueIndex];
+			switch (tagTypeName)
 			{
-				case 1:
+				case "SpeakerName":
 					//add text height
 					totalHeight += EditorTool.AddedLineHeight;
 					break;
-				case 3:
-					//add storyInstruction height
-					totalHeight += EditorTool.GetAddedHeight(EditorTool.GetHeight(storyInstruction));
-					break;
-				case 4:
+				case "ChangeBranch":
 					//add id height
 					totalHeight += EditorTool.AddedLineHeight;
 					break;
-				case 5:
+				case "ChangeStage":
 					//add id height
 					totalHeight += EditorTool.AddedLineHeight;
 					break;
 			}
+			//instructions label
+			totalHeight += EditorTool.AddedLineHeight;
+			//instructions
+			totalHeight += EditorTool.GetAddedHeight(instructionsList.GetHeight());
 			return totalHeight;
 		}
 	}

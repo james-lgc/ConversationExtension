@@ -103,44 +103,44 @@ MonoBehaviour:
   - '#convLineTag#y5haWQtWX1CP'
   - '#convLineTag#yrChyy58tvO8'
   - '#convList#qp5MfWMbBidO'
-  - '#convReply#0c5kHbrybnBb'
-  - '#convReply#13uCoG1QpFqq'
-  - '#convReply#18uikQNNyoQV'
-  - '#convReply#5jajD4VjSlEy'
-  - '#convReply#6bMpJtI6t3UT'
-  - '#convReply#7FCN6gyrBuu9'
-  - '#convReply#8zJkwcGxx7n2'
+  - '#convReply#1Yph5LAYacAK'
+  - '#convReply#49FBtzd9h1Jg'
+  - '#convReply#4FARtbU8L6GU'
+  - '#convReply#5F74wkjZ5rCt'
+  - '#convReply#7Ho15UVDCrCM'
+  - '#convReply#aaLDnD6jbOAG'
   - '#convReply#akGfqzVfKRTm'
-  - '#convReply#c1s17IqmAazQ'
-  - '#convReply#cSdqBBqREQ6j'
-  - '#convReply#dci46bExbQLp'
-  - '#convReply#Dga6TrZKDz2e'
-  - '#convReply#dw2PVGot1vqA'
-  - '#convReply#E4xS0gMHtFRy'
-  - '#convReply#eNoGwN4lcVjH'
-  - '#convReply#gM7lWYIPECl4'
-  - '#convReply#iptdvx2cHKI8'
-  - '#convReply#jIX6yxVjI6gY'
-  - '#convReply#KdFWhFxqYRRi'
-  - '#convReply#lneWBycs3mAZ'
-  - '#convReply#Nmcix80BaKdE'
-  - '#convReply#oUSqA2TGNkzK'
-  - '#convReply#pGLTWsrwfj0K'
-  - '#convReply#pWhcIyK09uzv'
-  - '#convReply#rMhty41iw8Wp'
-  - '#convReply#rSbKpaklGcGH'
-  - '#convReply#scjhCjnCVm49'
-  - '#convReply#TClIb4E0fLpi'
-  - '#convReply#tYqYPHB5ETEV'
-  - '#convReply#u4iabgdIzERT'
-  - '#convReply#uhfDH2UBhTjl'
-  - '#convReply#vLTuVarTGfru'
+  - '#convReply#ar2sdSv6p1iK'
+  - '#convReply#aUYSYiidFkRj'
+  - '#convReply#BlYFCypFoddr'
+  - '#convReply#C1MnhYJQ6rmR'
+  - '#convReply#DcisoeRn7OR3'
+  - '#convReply#e96pIWV9TTd2'
+  - '#convReply#ElGFzmcVigAs'
+  - '#convReply#Gg8hUVwTOSB9'
+  - '#convReply#GGsfwmdP9mh5'
+  - '#convReply#HOz45BF9p2kU'
+  - '#convReply#hQOtA0WYcVzQ'
+  - '#convReply#hTCAPqUFSWV8'
+  - '#convReply#I6beaJMIp9n3'
+  - '#convReply#ikzx1goDneVl'
+  - '#convReply#IpXs14PWQKDw'
+  - '#convReply#K7qJUFUnCk00'
+  - '#convReply#lUSoaY3MFday'
+  - '#convReply#NxVNrp9PVRSn'
+  - '#convReply#PXrIrllGdL3t'
+  - '#convReply#quVQGkulffPw'
+  - '#convReply#rUu4xy9uhm2z'
+  - '#convReply#stNjsYxYg2PP'
+  - '#convReply#tacfL37QmkTA'
+  - '#convReply#v35H8e54ke2d'
+  - '#convReply#VoWUWUh0shna'
   - '#convReply#vXHy6bI2EjIM'
-  - '#convReply#Wd8dW2LbIKwu'
-  - '#convReply#yC8YPiuSB8gG'
-  - '#convReply#YrcNuFjmH2cu'
-  - '#convReply#ZAhgHDz3uGOc'
-  - '#convReply#ZjZGGMHqgsqJ'
+  - '#convReply#X89uX95Scsjg'
+  - '#convReply#xrVRcIQd2wyP'
+  - '#convReply#xSjdF4FmZGjD'
+  - '#convReply#yI5ceX2pllQm'
+  - '#convReply#ZBmyAEcqx2wK'
   - '#convStage#3LSIwLuXgZts'
   - '#convStage#HOo4uusMTW9X'
   - '#convStage#tEk7NESzzdXl'
@@ -171,7 +171,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 1
             dataArray:
-            - uniqueID: '#convReply#vLTuVarTGfru'
+            - uniqueID: '#convReply#DcisoeRn7OR3'
               name: Continue
               id: 0
               isExpanded: 0
@@ -188,12 +188,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#SO9fQkdSQzsd'
@@ -202,7 +198,7 @@ MonoBehaviour:
             id: 1
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#0c5kHbrybnBb'
+            - uniqueID: '#convReply#tacfL37QmkTA'
               name: Continue
               id: 0
               isExpanded: 0
@@ -219,12 +215,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#fFZT23exwxtf'
@@ -232,7 +224,7 @@ MonoBehaviour:
             id: 2
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#Nmcix80BaKdE'
+            - uniqueID: '#convReply#stNjsYxYg2PP'
               name: Continue
               id: 0
               isExpanded: 0
@@ -249,12 +241,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#Okc9RGfivMBn'
@@ -263,7 +251,7 @@ MonoBehaviour:
             id: 3
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#eNoGwN4lcVjH'
+            - uniqueID: '#convReply#1Yph5LAYacAK'
               name: Continue
               id: 0
               isExpanded: 0
@@ -280,12 +268,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#22yr2IEuZJHm'
@@ -295,7 +279,7 @@ MonoBehaviour:
             id: 4
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#ZjZGGMHqgsqJ'
+            - uniqueID: '#convReply#GGsfwmdP9mh5'
               name: Continue
               id: 0
               isExpanded: 0
@@ -312,12 +296,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#wF2f4e4c2ZdG'
@@ -325,7 +305,7 @@ MonoBehaviour:
             id: 5
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#yC8YPiuSB8gG'
+            - uniqueID: '#convReply#HOz45BF9p2kU'
               name: Continue
               id: 0
               isExpanded: 0
@@ -342,12 +322,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#yaykMkAsZ4fL'
@@ -356,7 +332,7 @@ MonoBehaviour:
             id: 6
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#jIX6yxVjI6gY'
+            - uniqueID: '#convReply#ar2sdSv6p1iK'
               name: Continue
               id: 0
               isExpanded: 0
@@ -373,12 +349,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#tDZICU0uPhmR'
@@ -388,7 +360,7 @@ MonoBehaviour:
             id: 7
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#7FCN6gyrBuu9'
+            - uniqueID: '#convReply#K7qJUFUnCk00'
               name: Continue
               id: 0
               isExpanded: 0
@@ -405,12 +377,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#XyjT0imOeizv'
@@ -420,7 +388,7 @@ MonoBehaviour:
             id: 8
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#Dga6TrZKDz2e'
+            - uniqueID: '#convReply#lUSoaY3MFday'
               name: Continue
               id: 0
               isExpanded: 0
@@ -437,12 +405,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#l89E0RuTLg3b'
@@ -451,7 +415,7 @@ MonoBehaviour:
             id: 9
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#ZAhgHDz3uGOc'
+            - uniqueID: '#convReply#yI5ceX2pllQm'
               name: Continue
               id: 0
               isExpanded: 0
@@ -468,12 +432,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#q5rRlv6knMli'
@@ -482,7 +442,7 @@ MonoBehaviour:
             id: 10
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#8zJkwcGxx7n2'
+            - uniqueID: '#convReply#PXrIrllGdL3t'
               name: End
               id: 0
               isExpanded: 0
@@ -495,16 +455,23 @@ MonoBehaviour:
               name: 
               id: 0
               isExpanded: 0
-              tagType: 3
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 1
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 3
+              instructions:
+              - extension: 3
+                name: 
+                identifier: 01000000000000000000000000000000
+                transformValue:
+                  xPosition: 0
+                  yPosition: 0
+                  zPosition: 0
+                  wRotation: 0
+                  xRotation: 0
+                  yRotation: 0
+                  zRotation: 0
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -522,7 +489,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#oUSqA2TGNkzK'
+            - uniqueID: '#convReply#v35H8e54ke2d'
               name: End
               id: 0
               isExpanded: 0
@@ -539,12 +506,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -595,12 +558,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 0
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -614,7 +573,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#tYqYPHB5ETEV'
+            - uniqueID: '#convReply#Gg8hUVwTOSB9'
               name: Continue
               id: 0
               isExpanded: 0
@@ -627,16 +586,12 @@ MonoBehaviour:
               name: 
               id: 3
               isExpanded: 0
-              tagType: 4
+              tagType: 3
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -650,7 +605,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#dci46bExbQLp'
+            - uniqueID: '#convReply#IpXs14PWQKDw'
               name: Continue
               id: 0
               isExpanded: 0
@@ -667,12 +622,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -687,7 +638,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#gM7lWYIPECl4'
+            - uniqueID: '#convReply#ZBmyAEcqx2wK'
               name: Continue
               id: 0
               isExpanded: 0
@@ -704,12 +655,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#QYoO1d451CHk'
@@ -718,7 +665,7 @@ MonoBehaviour:
             id: 1
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#YrcNuFjmH2cu'
+            - uniqueID: '#convReply#aaLDnD6jbOAG'
               name: Continue
               id: 0
               isExpanded: 0
@@ -735,12 +682,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#wejl91BGMljw'
@@ -748,7 +691,7 @@ MonoBehaviour:
             id: 2
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#KdFWhFxqYRRi'
+            - uniqueID: '#convReply#e96pIWV9TTd2'
               name: Continue
               id: 0
               isExpanded: 0
@@ -765,12 +708,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#VdAc5X3qj4HG'
@@ -779,7 +718,7 @@ MonoBehaviour:
             id: 3
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#dw2PVGot1vqA'
+            - uniqueID: '#convReply#X89uX95Scsjg'
               name: Continue
               id: 0
               isExpanded: 0
@@ -796,12 +735,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#tFMNlqo7lCyl'
@@ -809,7 +744,7 @@ MonoBehaviour:
             id: 4
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#6bMpJtI6t3UT'
+            - uniqueID: '#convReply#aUYSYiidFkRj'
               name: Continue
               id: 0
               isExpanded: 0
@@ -826,12 +761,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#r4LCiLh667Dq'
@@ -839,7 +770,7 @@ MonoBehaviour:
             id: 5
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#uhfDH2UBhTjl'
+            - uniqueID: '#convReply#quVQGkulffPw'
               name: Continue
               id: 0
               isExpanded: 0
@@ -856,12 +787,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#mpcmGg1bbZjP'
@@ -870,7 +797,7 @@ MonoBehaviour:
             id: 6
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#pGLTWsrwfj0K'
+            - uniqueID: '#convReply#hTCAPqUFSWV8'
               name: Continue
               id: 0
               isExpanded: 0
@@ -887,12 +814,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#062EEqDmK6Or'
@@ -901,7 +824,7 @@ MonoBehaviour:
             id: 7
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#lneWBycs3mAZ'
+            - uniqueID: '#convReply#xSjdF4FmZGjD'
               name: End
               id: 0
               isExpanded: 0
@@ -914,16 +837,23 @@ MonoBehaviour:
               name: 
               id: 0
               isExpanded: 0
-              tagType: 3
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 1
-                  storyID: 0
-                  threadID: 0
-                  stageID: 1
                 instruction: 4
+              instructions:
+              - extension: 3
+                name: 
+                identifier: 0100000000000000000000000100000000000000
+                transformValue:
+                  xPosition: 0
+                  yPosition: 0
+                  zPosition: 0
+                  wRotation: 0
+                  xRotation: 0
+                  yRotation: 0
+                  zRotation: 0
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -941,7 +871,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#iptdvx2cHKI8'
+            - uniqueID: '#convReply#7Ho15UVDCrCM'
               name: End
               id: 0
               isExpanded: 0
@@ -958,12 +888,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -990,7 +916,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#c1s17IqmAazQ'
+            - uniqueID: '#convReply#BlYFCypFoddr'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1007,12 +933,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#0HdhDmO1ITOZ'
@@ -1021,7 +943,7 @@ MonoBehaviour:
             id: 1
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#u4iabgdIzERT'
+            - uniqueID: '#convReply#C1MnhYJQ6rmR'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1038,12 +960,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#bZweaLAZLYfY'
@@ -1052,7 +970,7 @@ MonoBehaviour:
             id: 2
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#Wd8dW2LbIKwu'
+            - uniqueID: '#convReply#5F74wkjZ5rCt'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1069,12 +987,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#nAkjOQGcwKat'
@@ -1083,7 +997,7 @@ MonoBehaviour:
             id: 3
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#cSdqBBqREQ6j'
+            - uniqueID: '#convReply#rUu4xy9uhm2z'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1100,12 +1014,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#hmRmpE17Ddnk'
@@ -1114,7 +1024,7 @@ MonoBehaviour:
             id: 4
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#rMhty41iw8Wp'
+            - uniqueID: '#convReply#49FBtzd9h1Jg'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1131,12 +1041,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#j9zackGZdYP6'
@@ -1145,7 +1051,7 @@ MonoBehaviour:
             id: 5
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#TClIb4E0fLpi'
+            - uniqueID: '#convReply#ElGFzmcVigAs'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1162,12 +1068,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#w4OyQ7OfUxnE'
@@ -1176,7 +1078,7 @@ MonoBehaviour:
             id: 6
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#E4xS0gMHtFRy'
+            - uniqueID: '#convReply#VoWUWUh0shna'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1193,12 +1095,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#MA1FMXFh7JE2'
@@ -1207,7 +1105,7 @@ MonoBehaviour:
             id: 7
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#rSbKpaklGcGH'
+            - uniqueID: '#convReply#hQOtA0WYcVzQ'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1224,12 +1122,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#c9rnL5NywECO'
@@ -1238,7 +1132,7 @@ MonoBehaviour:
             id: 8
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#18uikQNNyoQV'
+            - uniqueID: '#convReply#xrVRcIQd2wyP'
               name: Continue
               id: 0
               isExpanded: 0
@@ -1255,12 +1149,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           - uniqueID: '#convLine#Z2UbyAmKuDeP'
@@ -1269,7 +1159,7 @@ MonoBehaviour:
             id: 9
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#scjhCjnCVm49'
+            - uniqueID: '#convReply#4FARtbU8L6GU'
               name: End
               id: 0
               isExpanded: 0
@@ -1282,16 +1172,23 @@ MonoBehaviour:
               name: 
               id: 0
               isExpanded: 0
-              tagType: 3
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 1
-                sIndex:
-                  mythID: 1
-                  storyID: 0
-                  threadID: 0
-                  stageID: 1
                 instruction: 4
+              instructions:
+              - extension: 3
+                name: 
+                identifier: 0100000000000000000000000100000001000000
+                transformValue:
+                  xPosition: 0
+                  yPosition: 0
+                  zPosition: 0
+                  wRotation: 0
+                  xRotation: 0
+                  yRotation: 0
+                  zRotation: 0
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -1309,7 +1206,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#pWhcIyK09uzv'
+            - uniqueID: '#convReply#NxVNrp9PVRSn'
               name: End
               id: 0
               isExpanded: 0
@@ -1326,12 +1223,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -1357,7 +1250,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#5jajD4VjSlEy'
+            - uniqueID: '#convReply#I6beaJMIp9n3'
               name: End
               id: 0
               isExpanded: 0
@@ -1370,16 +1263,23 @@ MonoBehaviour:
               name: 
               id: 0
               isExpanded: 0
-              tagType: 3
+              tagType: 0
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 1
-                  storyID: 1
-                  threadID: 0
-                  stageID: 0
                 instruction: 1
+              instructions:
+              - extension: 3
+                name: 
+                identifier: 0100000001000000
+                transformValue:
+                  xPosition: 0
+                  yPosition: 0
+                  zPosition: 0
+                  wRotation: 0
+                  xRotation: 0
+                  yRotation: 0
+                  zRotation: 0
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch
@@ -1397,7 +1297,7 @@ MonoBehaviour:
             id: 0
             isExpanded: 0
             dataArray:
-            - uniqueID: '#convReply#13uCoG1QpFqq'
+            - uniqueID: '#convReply#ikzx1goDneVl'
               name: End
               id: 0
               isExpanded: 0
@@ -1414,12 +1314,8 @@ MonoBehaviour:
               serializedUniqueIDPrefix: convLineTag
               storyInstruction:
                 stagePointID: 0
-                sIndex:
-                  mythID: 0
-                  storyID: 0
-                  threadID: 0
-                  stageID: 0
                 instruction: 0
+              instructions: []
             useDefaultReply: 1
             serializedUniqueIDPrefix: convLine
           serializedUniqueIDPrefix: convBranch

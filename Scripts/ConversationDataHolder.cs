@@ -10,7 +10,7 @@ namespace DSA.Extensions.Conversations
 	[System.Serializable]
 	public abstract class ConversationDataHolder : ExtendedScriptableObject, IDataHoldable<string, Conversation>
 	{
-		public override ExtensionEnum.Extension Extension { get { return ExtensionEnum.Extension.Conversation; } }
+		public override ExtensionEnum Extension { get { return ExtensionEnum.Conversation; } }
 
 		public Func<string, Conversation> GetDataFunc { protected get; set; }
 

@@ -10,7 +10,7 @@ using DSA.Extensions.Base;
 [System.Serializable]
 public class ConversationTrait : TraitBase, ISendable<Conversation>
 {
-	public override ExtensionEnum.Extension Extension { get { return ExtensionEnum.Extension.Conversation; } }
+	public override ExtensionEnum Extension { get { return ExtensionEnum.Conversation; } }
 
 	public Action<Conversation> SendAction { get; set; }
 

@@ -10,7 +10,7 @@ namespace DSA.Extensions.Conversations
 	[System.Serializable]
 	public class ConversationManager : CanvasedManagerBase<ConversationCanvas>
 	{
-		public override ExtensionEnum.Extension Extension { get { return ExtensionEnum.Extension.Conversation; } }
+		public override ExtensionEnum Extension { get { return ExtensionEnum.Conversation; } }
 
 		[SerializeField] ConversationWriter writer;
 

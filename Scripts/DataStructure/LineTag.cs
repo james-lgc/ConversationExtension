@@ -7,33 +7,33 @@ using DSA.Extensions.Base;
 namespace DSA.Extensions.Conversations
 {
 	[System.Serializable]
-	public class LineTag : DataItem, IProvider<StoryInstruction>, IEnum
+	public class LineTag : DataItem, IProvider<InstructionData[]>, IEnum
 	{
-		public enum TagType { None, SpeakerName, TopicQuestion, StoryInstruct, ChangeBranch, ChangeStage };
+		public enum TagType { None, SpeakerName, TopicQuestion, ChangeBranch, ChangeStage };
 		[SerializeField] private TagType tagType;
 
 		[SerializeField] private string serializedUniqueIDPrefix = "convLineTag";
 		protected override string uniqueIDPrefix { get { serializedUniqueIDPrefix = "convLineTag"; return serializedUniqueIDPrefix; } }
 
-		[SerializeField] private StoryInstruction storyInstruction;
+		[SerializeField] private InstructionData[] instructions;
 
-		public LineTag(int sentTagType = 0, string sentText = "", StoryInstruction sentInstruction = default(StoryInstruction))
+		public LineTag(int sentTagType = 0, string sentText = "", InstructionData[] sentInstructions = null)
 		{
 			tagType = (TagType)sentTagType;
 			name = sentText;
-			storyInstruction = sentInstruction;
+			instructions = sentInstructions;
 		}
 
-		public LineTag(TagType sentTagType = TagType.None, string sentText = "", StoryInstruction sentInstruction = default(StoryInstruction))
+		public LineTag(TagType sentTagType = TagType.None, string sentText = "", InstructionData[] sentInstructions = null)
 		{
 			tagType = sentTagType;
 			name = sentText;
-			storyInstruction = sentInstruction;
+			instructions = sentInstructions;
 		}
 
-		public StoryInstruction GetItem()
+		public InstructionData[] GetItem()
 		{
-			return storyInstruction;
+			return instructions;
 		}
 
 		public Enum GetEnumValue()
@@ -68,7 +68,7 @@ namespace DSA.Extensions.Conversations
 			name = "New LineTag";
 			tagType = TagType.None;
 			uniqueID = null;
-			storyInstruction = default(StoryInstruction);
+			instructions = null;
 			id = 0;
 		}
 	}
