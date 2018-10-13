@@ -15,7 +15,7 @@ namespace DSA.Extensions.Conversations.Editor
 		protected override int maxNestedButtons { get { return 5; } }
 
 		//Menu item initiailisation to load the top level conversation list
-		[MenuItem("Window/Conversations")]
+		[MenuItem("Window/Conversations", false, 1)]
 		public static void Init()
 		{
 			ConversationEditorWindow window = (ConversationEditorWindow)EditorWindow.GetWindow(typeof(ConversationEditorWindow));
